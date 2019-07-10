@@ -86,11 +86,11 @@ int main()
     // will not work
     //Point p{ 1,2 };
 
-    Point p1 = Point::createPoint(5, M_PI_4,PointType::polar);
+    Point& p1 = Point::createPoint(5, M_PI_4,PointType::polar);
     std::cout << p1 << std::endl;
 
 
-    Point p2 = Point::createPoint(12,56,PointType::cartesian);
+    Point& p2 = Point::createPoint(12,56,PointType::cartesian);
     std::cout << p2 << std::endl;
 
     Polar p3(5, M_PI_4);
